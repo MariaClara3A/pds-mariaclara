@@ -1,0 +1,35 @@
+﻿<Window x:Class="ATV01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATV01"
+        mc:Ignorable="d"
+        Title="LOGIN" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" WindowStyle="None">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Imagens/meme1.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="116*"/>
+            <ColumnDefinition Width="295*"/>
+            <ColumnDefinition Width="389*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btEnter" Content="ENTER" HorizontalAlignment="Left" Margin="127,323,0,0" VerticalAlignment="Top" Height="74" Width="116" FontFamily="Sylfaen" FontWeight="Bold" Background="#FFFF6900" BorderBrush="White" Foreground="White" Grid.Column="1" Click="btEnter_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <TextBox x:Name="txtLogin" HorizontalAlignment="Left" Margin="68,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="432" Height="24" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label Content="LOGIN:" HorizontalAlignment="Left" Margin="258,142,0,0" VerticalAlignment="Top" FontFamily="Sylfaen" FontWeight="Bold" FontStyle="Italic" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <PasswordBox x:Name="passBoxSenha" HorizontalAlignment="Left" Margin="68,276,0,0" VerticalAlignment="Top" Width="432" Height="26" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label Content="PASSWORD:" HorizontalAlignment="Left" Margin="244,250,0,0" VerticalAlignment="Top" FontFamily="Sylfaen" FontWeight="Bold" FontStyle="Italic" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="close" Grid.Column="2" Content="X" HorizontalAlignment="Left" Margin="351,23,0,0" VerticalAlignment="Top" Click="Button_Click" Background="#FFF75B01" BorderBrush="White" Foreground="White" RenderTransformOrigin="0.5,0.5"/>
+        <Button x:Name="btCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="36,323,0,0" VerticalAlignment="Top" Height="74" Width="116" FontFamily="Sylfaen" FontWeight="Bold" Background="#FFFF6900" BorderBrush="White" Foreground="White" Grid.Column="2" Click="btCadastrar_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+    </Grid>
+</Window>
